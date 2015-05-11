@@ -23,4 +23,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Include package config fragments
 include $(LOCAL_PATH)/product/*.mk
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    YUDoze
+
 $(call inherit-product-if-exists, vendor/yu/lettuce/lettuce-vendor.mk)
